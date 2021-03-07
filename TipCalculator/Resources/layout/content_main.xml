@@ -11,12 +11,14 @@
     <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:inputType="text" />
+    android:inputType="text"
+    android:id="@+id/inputBill"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CALCULATE" />
+        android:text="CALCULATE"
+        android:id="@+id/calculateButton"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -24,14 +26,20 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:id="@+id/linearLayout1" >
         <TextView
             android:text="Propina"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+        />
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" 
+            android:layout_marginRight="20dp"
+            android:id="@+id/outputTip"
+        />
 
     </LinearLayout>
 
@@ -41,14 +49,18 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:id="@+id/linearLayout2">
         <TextView
             android:text="Total"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+        />
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" 
+            android:id="@+id/outputTotal" />
 
     </LinearLayout>
 
